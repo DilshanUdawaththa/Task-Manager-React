@@ -31,7 +31,7 @@ function TodoList() {
   const handleDelete = (taskId) => {
     const apiUrl = `https://task-manager-react-a74e7-default-rtdb.firebaseio.com/tasks/${taskId}.json`;
 
-    axios.delete(apiUrl, { status: "Completed" }).then((Response) => {
+    axios.delete(apiUrl).then((Response) => {
       setTaskUpdated(!taskUpdated);
     });
   };

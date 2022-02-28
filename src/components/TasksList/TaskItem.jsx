@@ -8,7 +8,7 @@ function TaskItem() {
     const borderColor = taskInfo.status === "Completed" ? "border-success" : "";
 
     return (
-      <div className="col mb-2">
+      <div className="col mb-2" key={taskInfo.id}>
         <div className={"card border " + borderColor}>
           <div className="card-header">
             <span className="card-title">{taskInfo.title}</span>
